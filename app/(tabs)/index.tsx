@@ -1,14 +1,16 @@
 import { View, StyleSheet } from 'react-native';
+import * as ImagePicker from 'expo-image-picker';
+import { useState } from 'react';
 
 import Button from '@/components/Button';
 import ImageViewer from '@/components/ImageViewer';
-
-import * as ImagePicker from 'expo-image-picker';
 
 const PlaceholderImage = require('@/assets/images/background-image.png');
 
 export default function Index() 
 {
+  const [selectedImage, setSelectedImage] = useState<string | undefined>(undefined);
+
   const pickImageAsync = async () =>
   {
     let result = await ImagePicker.launchImageLibraryAsync({
