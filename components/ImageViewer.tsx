@@ -4,6 +4,7 @@ import { Image } from 'expo-image';
 type Props = 
 {
   imgSource: ImageSourcePropType;
+  selectedImage?: string;
 };
 
 export default function ImageViewer({ imgSource }: Props) 
