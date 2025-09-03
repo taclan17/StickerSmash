@@ -31,7 +31,22 @@ export default function Index()
     {
       alert('You did not select any image.');
     }
-  }
+  };
+
+  const onReset = () =>
+  {
+    setShowAppOptions(false);
+  };
+
+  const onAddSticker = () =>
+  {
+    // implement later
+  };
+
+  const onSaveImageAsync = async () =>
+  {
+    // implement later
+  };
 
   return (
     <View style={styles.container}>
