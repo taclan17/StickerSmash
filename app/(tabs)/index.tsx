@@ -74,6 +74,9 @@ export default function Index()
           <Button label="Use this photo" onPress={() => setShowAppOptions(true)} />
         </View>
       )}
+      <EmojiPicker isVisible={isModalVisible} onClose={onModalClose}>
+        // Emoji list component
+      </EmojiPicker>
     </View>
   );
 }
