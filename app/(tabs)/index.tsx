@@ -42,7 +42,7 @@ export default function Index()
 
   const onAddSticker = () =>
   {
-    // implement later
+    setIsModalVisible(false);
   };
 
   const onSaveImageAsync = async () =>
