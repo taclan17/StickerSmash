@@ -1,5 +1,5 @@
 import { ImageSourcePropType, View } from 'react-native';
-import { Image } from 'expo-image';
+import Animated from 'react-native-reanimated';
 
 type Props = {
   imageSize: number;
