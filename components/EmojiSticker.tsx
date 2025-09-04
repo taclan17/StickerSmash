@@ -9,6 +9,8 @@ type Props = {
 
 export default function EmojiSticker({ imageSize, stickerSource }: Props)
 {
+  const scaleImage = useSharedValue(imageSize);
+
   return (
     <View style={{ top: -350 }}>
       <Animated.Image 
