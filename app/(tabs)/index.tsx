@@ -42,6 +42,11 @@ export default function Index()
 
   const onAddSticker = () =>
   {
+    setIsModalVisible(true);
+  };
+
+  const onModalClose = () =>
+  {
     setIsModalVisible(false);
   };
 
