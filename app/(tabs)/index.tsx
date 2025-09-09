@@ -17,10 +17,18 @@ const PlaceholderImage = require('@/assets/images/background-image.png');
 
 export default function Index() 
 {
+  const [permissionResponse, requestPermission] = MediaLibrary.usePermissions();
   const [selectedImage, setSelectedImage] = useState<string | undefined>(undefined);
   const [showAppOptions, setShowAppOptions] = useState<boolean>(false);
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   const [pickedEmoji, setPickedEmoji] = useState<ImageSourcePropType | undefined>(undefined);
+
+  useEffect(() => {
+    if (!permissionResponse?.granted)
+    {
+      requestPermission();
+    }
+  }, []);
 
   const pickImageAsync = async () =>
   {
