@@ -1,6 +1,7 @@
 import { View, StyleSheet, ImageSourcePropType } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import * as MediaLibrary from 'expo-media-library';
 
 import Button from '@/components/Button';
 import ImageViewer from '@/components/ImageViewer';
