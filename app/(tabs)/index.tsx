@@ -3,6 +3,7 @@ import * as ImagePicker from 'expo-image-picker';
 import { useEffect, useState, useRef } from 'react';
 import * as MediaLibrary from 'expo-media-library';
 import { captureRef } from 'react-native-view-shot';
+import domtoimage from 'dom-to-image';
 
 import Button from '@/components/Button';
 import ImageViewer from '@/components/ImageViewer';
